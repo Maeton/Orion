@@ -49,9 +49,9 @@ spring:
 
 
             - id: eventos-service
-            - uri: http://eventos-service:9096
-            - predicates:
-              - Path=/api/eventos/**
+              uri: http://eventos-service:9096
+              predicates:
+                - Path=/api/eventos/**
 
 
             - id: interacciones_service

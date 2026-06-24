@@ -38,6 +38,8 @@ public class SecurityConfig {
                 .csrf(csrf -> csrf.disable())
                 .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authorizeHttpRequests(auth -> {
+                    auth.requestMatchers("/swagger-ui/**", "/v3/api-docs/**",
+                            "/swagger-ui/index.html", "/swagger-resources/**", "/webjars/**").permitAll();
                     auth.requestMatchers(HttpMethod.GET, "/api/media/**").permitAll();
                     auth.requestMatchers(HttpMethod.POST, "/api/media/**").authenticated();
                     auth.anyRequest().permitAll();
