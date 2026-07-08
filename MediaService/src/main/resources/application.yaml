@@ -2,6 +2,11 @@ spring:
   application:
     name: MediaService
 
+  datasource:
+    url: ${SPRING_DATASOURCE_URL}
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
+
   jpa:
     hibernate:
       ddl-auto: update
@@ -14,15 +19,17 @@ spring:
       max-request-size: 5MB
 
 
-datasource:
-  url: ${SPRING_DATASOURCE_URL}
-  username: ${SPRING_DATASOURCE_USERNAME}
-  password: ${SPRING_DATASOURCE_PASSWORD}
-
-
 server:
   port: 9093
 
 media:
   storage:
-    location: {MEDIA_STORAGE_LOCATION:./uploads}
+    location: ${MEDIA_STORAGE_LOCATION:./uploads}
+
+logging:
+  file:
+    name: logs/media.log
+  logback:
+    rollingpolicy:
+      max-file-size: 10MB
+      max-history: 7

@@ -1,0 +1,98 @@
+2026-07-07T14:59:52.207Z  INFO 1 --- [Usuarios] [main] com.orion.Usuarios.UsuariosApplication   : Starting UsuariosApplication v0.0.1-SNAPSHOT using Java 17.0.19 with PID 1 (/app/app.jar started by root in /app)
+2026-07-07T14:59:52.217Z  INFO 1 --- [Usuarios] [main] com.orion.Usuarios.UsuariosApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-07-07T14:59:54.347Z  INFO 1 --- [Usuarios] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-07-07T14:59:54.790Z  INFO 1 --- [Usuarios] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 418 ms. Found 4 JPA repository interfaces.
+2026-07-07T14:59:56.085Z  INFO 1 --- [Usuarios] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 9090 (http)
+2026-07-07T14:59:56.113Z  INFO 1 --- [Usuarios] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-07-07T14:59:56.114Z  INFO 1 --- [Usuarios] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.21]
+2026-07-07T14:59:56.186Z  INFO 1 --- [Usuarios] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 3852 ms
+2026-07-07T14:59:56.618Z  INFO 1 --- [Usuarios] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-07-07T14:59:56.723Z  INFO 1 --- [Usuarios] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.12.Final
+2026-07-07T14:59:57.619Z  INFO 1 --- [Usuarios] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-07-07T14:59:57.683Z  INFO 1 --- [Usuarios] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-07-07T14:59:58.019Z  INFO 1 --- [Usuarios] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3d8fd373
+2026-07-07T14:59:58.022Z  INFO 1 --- [Usuarios] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-07-07T14:59:58.134Z  INFO 1 --- [Usuarios] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://db:3306/usuario_db?allowPublicKeyRetrieval=true&useSSL=false]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.46
+	Default catalog/schema: usuario_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-07-07T14:59:59.283Z  INFO 1 --- [Usuarios] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-07-07T14:59:59.386Z  INFO 1 --- [Usuarios] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-07-07T14:59:59.987Z  INFO 1 --- [Usuarios] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-07-07T15:00:00.485Z  INFO 1 --- [Usuarios] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2026-07-07T15:00:00.769Z  WARN 1 --- [Usuarios] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-07-07T15:00:03.203Z  INFO 1 --- [Usuarios] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 9090 (http) with context path '/'
+2026-07-07T15:00:03.249Z  INFO 1 --- [Usuarios] [main] com.orion.Usuarios.UsuariosApplication   : Started UsuariosApplication in 12.97 seconds (process running for 15.129)
+2026-07-07T15:00:34.400Z  INFO 1 --- [Usuarios] [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-07-07T15:00:34.401Z  INFO 1 --- [Usuarios] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-07-07T15:00:34.403Z  INFO 1 --- [Usuarios] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-07-07T15:00:34.461Z  INFO 1 --- [Usuarios] [http-nio-9090-exec-1] c.orion.Usuarios.Service.UsuarioService  : Obteniendo todos los usuarios
+2026-07-07T15:00:37.668Z  WARN 1 --- [Usuarios] [parallel-1] c.o.Usuarios.Client.EstadisticasClient   : No se pudo obtener el conteo remoto /api/posts/user/1/count (Did not observe any item or terminal signal within 3000ms in 'flatMap' (and no fallback has been configured)), se retorna 0
+2026-07-07T15:00:39.030Z  WARN 1 --- [Usuarios] [reactor-http-epoll-1] c.o.Usuarios.Client.EstadisticasClient   : No se pudo obtener el conteo remoto /api/interacciones/usuarios/1/seguidores/count (Failed to resolve 'api-gateway' [A(1)]), se retorna 0
+2026-07-07T15:00:42.033Z  WARN 1 --- [Usuarios] [parallel-3] c.o.Usuarios.Client.EstadisticasClient   : No se pudo obtener el conteo remoto /api/interacciones/usuarios/1/seguidos/count (Did not observe any item or terminal signal within 3000ms in 'flatMap' (and no fallback has been configured)), se retorna 0
+2026-07-07T15:00:42.605Z  WARN 1 --- [Usuarios] [reactor-http-epoll-1] c.o.Usuarios.Client.EstadisticasClient   : No se pudo obtener el conteo remoto /api/posts/user/2/count (Failed to resolve 'api-gateway' [A(1)]), se retorna 0
+2026-07-07T15:00:45.609Z  WARN 1 --- [Usuarios] [parallel-5] c.o.Usuarios.Client.EstadisticasClient   : No se pudo obtener el conteo remoto /api/interacciones/usuarios/2/seguidores/count (Did not observe any item or terminal signal within 3000ms in 'flatMap' (and no fallback has been configured)), se retorna 0
+2026-07-07T15:00:46.196Z  WARN 1 --- [Usuarios] [reactor-http-epoll-1] c.o.Usuarios.Client.EstadisticasClient   : No se pudo obtener el conteo remoto /api/interacciones/usuarios/2/seguidos/count (Failed to resolve 'api-gateway' [A(1)]), se retorna 0
+2026-07-07T15:00:49.198Z  WARN 1 --- [Usuarios] [parallel-7] c.o.Usuarios.Client.EstadisticasClient   : No se pudo obtener el conteo remoto /api/posts/user/3/count (Did not observe any item or terminal signal within 3000ms in 'flatMap' (and no fallback has been configured)), se retorna 0
+2026-07-07T15:00:49.766Z  WARN 1 --- [Usuarios] [reactor-http-epoll-1] c.o.Usuarios.Client.EstadisticasClient   : No se pudo obtener el conteo remoto /api/interacciones/usuarios/3/seguidores/count (Failed to resolve 'api-gateway' [A(1)]), se retorna 0
+2026-07-07T15:00:55.967Z  WARN 1 --- [Usuarios] [parallel-9] c.o.Usuarios.Client.EstadisticasClient   : No se pudo obtener el conteo remoto /api/interacciones/usuarios/3/seguidos/count (Did not observe any item or terminal signal within 3000ms in 'flatMap' (and no fallback has been configured)), se retorna 0
+2026-07-07T15:00:56.572Z  WARN 1 --- [Usuarios] [reactor-http-epoll-1] c.o.Usuarios.Client.EstadisticasClient   : No se pudo obtener el conteo remoto /api/posts/user/4/count (Failed to resolve 'api-gateway' [A(1)]), se retorna 0
+2026-07-07T15:00:59.573Z  WARN 1 --- [Usuarios] [parallel-11] c.o.Usuarios.Client.EstadisticasClient   : No se pudo obtener el conteo remoto /api/interacciones/usuarios/4/seguidores/count (Did not observe any item or terminal signal within 3000ms in 'flatMap' (and no fallback has been configured)), se retorna 0
+2026-07-07T15:01:00.168Z  WARN 1 --- [Usuarios] [reactor-http-epoll-1] c.o.Usuarios.Client.EstadisticasClient   : No se pudo obtener el conteo remoto /api/interacciones/usuarios/4/seguidos/count (Failed to resolve 'api-gateway' [A(1)]), se retorna 0
+2026-07-07T15:01:03.170Z  WARN 1 --- [Usuarios] [parallel-1] c.o.Usuarios.Client.EstadisticasClient   : No se pudo obtener el conteo remoto /api/posts/user/5/count (Did not observe any item or terminal signal within 3000ms in 'flatMap' (and no fallback has been configured)), se retorna 0
+2026-07-07T15:01:03.769Z  WARN 1 --- [Usuarios] [reactor-http-epoll-1] c.o.Usuarios.Client.EstadisticasClient   : No se pudo obtener el conteo remoto /api/interacciones/usuarios/5/seguidores/count (Failed to resolve 'api-gateway' [A(1)]), se retorna 0
+2026-07-07T15:01:06.772Z  WARN 1 --- [Usuarios] [parallel-3] c.o.Usuarios.Client.EstadisticasClient   : No se pudo obtener el conteo remoto /api/interacciones/usuarios/5/seguidos/count (Did not observe any item or terminal signal within 3000ms in 'flatMap' (and no fallback has been configured)), se retorna 0
+2026-07-07T15:01:07.370Z  WARN 1 --- [Usuarios] [reactor-http-epoll-1] c.o.Usuarios.Client.EstadisticasClient   : No se pudo obtener el conteo remoto /api/posts/user/6/count (Failed to resolve 'api-gateway' [A(1)]), se retorna 0
+2026-07-07T15:01:10.372Z  WARN 1 --- [Usuarios] [parallel-5] c.o.Usuarios.Client.EstadisticasClient   : No se pudo obtener el conteo remoto /api/interacciones/usuarios/6/seguidores/count (Did not observe any item or terminal signal within 3000ms in 'flatMap' (and no fallback has been configured)), se retorna 0
+2026-07-07T15:01:10.941Z  WARN 1 --- [Usuarios] [reactor-http-epoll-1] c.o.Usuarios.Client.EstadisticasClient   : No se pudo obtener el conteo remoto /api/interacciones/usuarios/6/seguidos/count (Failed to resolve 'api-gateway' [A(1)]), se retorna 0
+2026-07-07T15:01:13.943Z  WARN 1 --- [Usuarios] [parallel-7] c.o.Usuarios.Client.EstadisticasClient   : No se pudo obtener el conteo remoto /api/posts/user/7/count (Did not observe any item or terminal signal within 3000ms in 'flatMap' (and no fallback has been configured)), se retorna 0
+2026-07-07T15:01:14.517Z  WARN 1 --- [Usuarios] [reactor-http-epoll-1] c.o.Usuarios.Client.EstadisticasClient   : No se pudo obtener el conteo remoto /api/interacciones/usuarios/7/seguidores/count (Failed to resolve 'api-gateway' [A(1)]), se retorna 0
+2026-07-07T15:01:17.519Z  WARN 1 --- [Usuarios] [parallel-9] c.o.Usuarios.Client.EstadisticasClient   : No se pudo obtener el conteo remoto /api/interacciones/usuarios/7/seguidos/count (Did not observe any item or terminal signal within 3000ms in 'flatMap' (and no fallback has been configured)), se retorna 0
+2026-07-07T15:01:18.092Z  WARN 1 --- [Usuarios] [reactor-http-epoll-1] c.o.Usuarios.Client.EstadisticasClient   : No se pudo obtener el conteo remoto /api/posts/user/8/count (Failed to resolve 'api-gateway' [A(1)]), se retorna 0
+2026-07-07T15:01:21.093Z  WARN 1 --- [Usuarios] [parallel-11] c.o.Usuarios.Client.EstadisticasClient   : No se pudo obtener el conteo remoto /api/interacciones/usuarios/8/seguidores/count (Did not observe any item or terminal signal within 3000ms in 'flatMap' (and no fallback has been configured)), se retorna 0
+2026-07-07T15:01:21.657Z  WARN 1 --- [Usuarios] [reactor-http-epoll-1] c.o.Usuarios.Client.EstadisticasClient   : No se pudo obtener el conteo remoto /api/interacciones/usuarios/8/seguidos/count (Failed to resolve 'api-gateway' [A(1)]), se retorna 0
+2026-07-07T15:01:27.872Z  WARN 1 --- [Usuarios] [parallel-1] c.o.Usuarios.Client.EstadisticasClient   : No se pudo obtener el conteo remoto /api/posts/user/9/count (Did not observe any item or terminal signal within 3000ms in 'flatMap' (and no fallback has been configured)), se retorna 0
+2026-07-07T15:01:28.501Z  WARN 1 --- [Usuarios] [reactor-http-epoll-1] c.o.Usuarios.Client.EstadisticasClient   : No se pudo obtener el conteo remoto /api/interacciones/usuarios/9/seguidores/count (Failed to resolve 'api-gateway' [A(1)]), se retorna 0
+2026-07-07T15:01:31.502Z  WARN 1 --- [Usuarios] [parallel-3] c.o.Usuarios.Client.EstadisticasClient   : No se pudo obtener el conteo remoto /api/interacciones/usuarios/9/seguidos/count (Did not observe any item or terminal signal within 3000ms in 'flatMap' (and no fallback has been configured)), se retorna 0
+2026-07-07T15:01:32.107Z  WARN 1 --- [Usuarios] [reactor-http-epoll-1] c.o.Usuarios.Client.EstadisticasClient   : No se pudo obtener el conteo remoto /api/posts/user/10/count (Failed to resolve 'api-gateway' [A(1)]), se retorna 0
+2026-07-07T15:01:35.108Z  WARN 1 --- [Usuarios] [parallel-5] c.o.Usuarios.Client.EstadisticasClient   : No se pudo obtener el conteo remoto /api/interacciones/usuarios/10/seguidores/count (Did not observe any item or terminal signal within 3000ms in 'flatMap' (and no fallback has been configured)), se retorna 0
+2026-07-07T15:01:35.726Z  WARN 1 --- [Usuarios] [reactor-http-epoll-1] c.o.Usuarios.Client.EstadisticasClient   : No se pudo obtener el conteo remoto /api/interacciones/usuarios/10/seguidos/count (Failed to resolve 'api-gateway' [A(1)]), se retorna 0
+2026-07-07T15:01:38.728Z  WARN 1 --- [Usuarios] [parallel-7] c.o.Usuarios.Client.EstadisticasClient   : No se pudo obtener el conteo remoto /api/posts/user/11/count (Did not observe any item or terminal signal within 3000ms in 'flatMap' (and no fallback has been configured)), se retorna 0
+2026-07-07T15:01:39.305Z  WARN 1 --- [Usuarios] [reactor-http-epoll-1] c.o.Usuarios.Client.EstadisticasClient   : No se pudo obtener el conteo remoto /api/interacciones/usuarios/11/seguidores/count (Failed to resolve 'api-gateway' [A(1)]), se retorna 0
+2026-07-07T15:01:42.307Z  WARN 1 --- [Usuarios] [parallel-9] c.o.Usuarios.Client.EstadisticasClient   : No se pudo obtener el conteo remoto /api/interacciones/usuarios/11/seguidos/count (Did not observe any item or terminal signal within 3000ms in 'flatMap' (and no fallback has been configured)), se retorna 0
+2026-07-07T15:01:42.887Z  WARN 1 --- [Usuarios] [reactor-http-epoll-1] c.o.Usuarios.Client.EstadisticasClient   : No se pudo obtener el conteo remoto /api/posts/user/13/count (Failed to resolve 'api-gateway' [A(1)]), se retorna 0
+2026-07-07T15:01:45.888Z  WARN 1 --- [Usuarios] [parallel-11] c.o.Usuarios.Client.EstadisticasClient   : No se pudo obtener el conteo remoto /api/interacciones/usuarios/13/seguidores/count (Did not observe any item or terminal signal within 3000ms in 'flatMap' (and no fallback has been configured)), se retorna 0
+2026-07-07T15:01:46.453Z  WARN 1 --- [Usuarios] [reactor-http-epoll-1] c.o.Usuarios.Client.EstadisticasClient   : No se pudo obtener el conteo remoto /api/interacciones/usuarios/13/seguidos/count (Failed to resolve 'api-gateway' [A(1)]), se retorna 0
+2026-07-07T15:01:49.454Z  WARN 1 --- [Usuarios] [parallel-1] c.o.Usuarios.Client.EstadisticasClient   : No se pudo obtener el conteo remoto /api/posts/user/14/count (Did not observe any item or terminal signal within 3000ms in 'flatMap' (and no fallback has been configured)), se retorna 0
+2026-07-07T15:01:50.039Z  WARN 1 --- [Usuarios] [reactor-http-epoll-1] c.o.Usuarios.Client.EstadisticasClient   : No se pudo obtener el conteo remoto /api/interacciones/usuarios/14/seguidores/count (Failed to resolve 'api-gateway' [A(1)]), se retorna 0
+2026-07-07T15:01:53.041Z  WARN 1 --- [Usuarios] [parallel-3] c.o.Usuarios.Client.EstadisticasClient   : No se pudo obtener el conteo remoto /api/interacciones/usuarios/14/seguidos/count (Did not observe any item or terminal signal within 3000ms in 'flatMap' (and no fallback has been configured)), se retorna 0
+2026-07-07T15:01:53.638Z  WARN 1 --- [Usuarios] [reactor-http-epoll-1] c.o.Usuarios.Client.EstadisticasClient   : No se pudo obtener el conteo remoto /api/posts/user/15/count (Failed to resolve 'api-gateway' [A(1)]), se retorna 0
+2026-07-07T15:01:56.639Z  WARN 1 --- [Usuarios] [parallel-5] c.o.Usuarios.Client.EstadisticasClient   : No se pudo obtener el conteo remoto /api/interacciones/usuarios/15/seguidores/count (Did not observe any item or terminal signal within 3000ms in 'flatMap' (and no fallback has been configured)), se retorna 0
+2026-07-07T15:02:00.402Z  WARN 1 --- [Usuarios] [reactor-http-epoll-1] c.o.Usuarios.Client.EstadisticasClient   : No se pudo obtener el conteo remoto /api/interacciones/usuarios/15/seguidos/count (Failed to resolve 'api-gateway' [A(1)]), se retorna 0
+2026-07-07T15:02:03.403Z  WARN 1 --- [Usuarios] [parallel-7] c.o.Usuarios.Client.EstadisticasClient   : No se pudo obtener el conteo remoto /api/posts/user/16/count (Did not observe any item or terminal signal within 3000ms in 'flatMap' (and no fallback has been configured)), se retorna 0
+2026-07-07T15:02:03.966Z  WARN 1 --- [Usuarios] [reactor-http-epoll-1] c.o.Usuarios.Client.EstadisticasClient   : No se pudo obtener el conteo remoto /api/interacciones/usuarios/16/seguidores/count (Failed to resolve 'api-gateway' [A(1)]), se retorna 0
+2026-07-07T15:02:06.967Z  WARN 1 --- [Usuarios] [parallel-9] c.o.Usuarios.Client.EstadisticasClient   : No se pudo obtener el conteo remoto /api/interacciones/usuarios/16/seguidos/count (Did not observe any item or terminal signal within 3000ms in 'flatMap' (and no fallback has been configured)), se retorna 0
+2026-07-07T15:40:46.646Z  INFO 1 --- [Usuarios] [http-nio-9090-exec-3] c.orion.Usuarios.Service.UsuarioService  : Registrando usuario diagtest1
+2026-07-07T15:40:47.050Z  INFO 1 --- [Usuarios] [http-nio-9090-exec-3] c.orion.Usuarios.Service.UsuarioService  : Usuario diagtest1 registrado con id 17
+2026-07-07T15:41:43.923Z  INFO 1 --- [Usuarios] [http-nio-9090-exec-4] c.orion.Usuarios.Service.UsuarioService  : Intento de login para usuario test
+2026-07-07T15:41:44.125Z  INFO 1 --- [Usuarios] [http-nio-9090-exec-4] c.orion.Usuarios.Service.UsuarioService  : Login exitoso para usuario test (id 16)
+2026-07-07T15:41:45.292Z  WARN 1 --- [Usuarios] [http-nio-9090-exec-9] c.o.U.Exception.GlobalExceptionHandler   : Recurso no encontrado: Usuario no encontrado
+2026-07-07T15:41:45.439Z  WARN 1 --- [Usuarios] [http-nio-9090-exec-8] c.o.U.Exception.GlobalExceptionHandler   : Recurso no encontrado: Usuario no encontrado
+2026-07-07T15:41:45.473Z  WARN 1 --- [Usuarios] [http-nio-9090-exec-10] c.o.U.Exception.GlobalExceptionHandler   : Recurso no encontrado: Usuario no encontrado
+2026-07-07T15:41:45.500Z  WARN 1 --- [Usuarios] [http-nio-9090-exec-1] c.o.U.Exception.GlobalExceptionHandler   : Recurso no encontrado: Usuario no encontrado
+2026-07-07T15:41:53.140Z  WARN 1 --- [Usuarios] [http-nio-9090-exec-8] c.o.U.Exception.GlobalExceptionHandler   : Recurso no encontrado: Usuario no encontrado
+2026-07-07T15:41:53.159Z  WARN 1 --- [Usuarios] [http-nio-9090-exec-1] c.o.U.Exception.GlobalExceptionHandler   : Recurso no encontrado: Usuario no encontrado
+2026-07-07T15:41:53.217Z  WARN 1 --- [Usuarios] [http-nio-9090-exec-7] c.o.U.Exception.GlobalExceptionHandler   : Recurso no encontrado: Usuario no encontrado
+2026-07-07T15:41:53.221Z  WARN 1 --- [Usuarios] [http-nio-9090-exec-10] c.o.U.Exception.GlobalExceptionHandler   : Recurso no encontrado: Usuario no encontrado
+2026-07-07T16:21:39.472Z  WARN 1 --- [Usuarios] [http-nio-9090-exec-3] c.o.U.Exception.GlobalExceptionHandler   : Recurso no encontrado: Usuario no encontrado
+2026-07-07T16:21:39.469Z  WARN 1 --- [Usuarios] [http-nio-9090-exec-5] c.o.U.Exception.GlobalExceptionHandler   : Recurso no encontrado: Usuario no encontrado
+2026-07-07T16:21:39.536Z  WARN 1 --- [Usuarios] [http-nio-9090-exec-1] c.o.U.Exception.GlobalExceptionHandler   : Recurso no encontrado: Usuario no encontrado
+2026-07-07T16:21:39.547Z  WARN 1 --- [Usuarios] [http-nio-9090-exec-10] c.o.U.Exception.GlobalExceptionHandler   : Recurso no encontrado: Usuario no encontrado
